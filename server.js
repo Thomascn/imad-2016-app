@@ -20,7 +20,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/article-1', function (req, res) {
     
-res.send ("Article one is requested");    
+res.sendFile(path.join(__dirname, 'ui', 'article-1.html'));    
 
 });
 
