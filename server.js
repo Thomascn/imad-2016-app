@@ -86,7 +86,7 @@ function createTemplate (data)
     </html>
     
     `;
-    return htmaTemplate;
+    return htmlTemplate;
 }
 
 
