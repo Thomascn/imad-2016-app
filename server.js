@@ -5,7 +5,10 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var ArticleOne = 
+var articles =
+{
+    
+ArticleOne : 
 {
     title: "Article-1",
     heading: "Article One",
@@ -31,7 +34,59 @@ var ArticleOne =
                     
     
     
-};
+},
+
+ArticleTwo:
+{
+    title: "Article-2",
+    heading: "Article Two",
+    date: "Sep 29, 2016",
+    content: 
+                    `<p>
+                        
+                        This is the Second article content.
+                        
+                    </p>
+                    
+                     <p>
+                        
+                         This is the Second article content. 
+                        
+                    </p>
+                    
+                    <p>
+                         This is the Second article content.
+                    </p>`
+                    
+},
+
+ArticleThree :
+{
+       title: "Article-3",
+    heading: "Article Three",
+    date: "Sep 30, 2016",
+    content: 
+                    `<p>
+                        
+                        This is the Third article content.
+                        
+                    </p>
+                    
+                     <p>
+                        
+                         This is the Third article content. 
+                        
+                    </p>
+                    
+                    <p>
+                         This is the Second article content.
+                    </p>`
+                    
+},
+
+}
+
+
 function createTemplate (data) 
 { 
     var title = data.title;
@@ -103,25 +158,13 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
-app.get('/article-1', function (req, res) {
+app.get('/:articlename', function (req, res) {
+var articleName = req.param.articleName;    
     
-res.send(createTemplate (ArticleOne) );    
+res.send(createTemplate (articles [articleName]) );    
 
 });
 
-
-app.get('/article-2', function (req, res) {
-    
-res.send ("Article two is requested");    
-
-});
-
-
-app.get('/article-3', function (req, res) {
-    
-res.send ("Article three is requested");    
-
-});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
