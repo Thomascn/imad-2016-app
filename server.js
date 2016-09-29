@@ -137,7 +137,7 @@ function createTemplate (data)
            
         </body>
         
-       
+        </div> 
     </html>
     
     `;
