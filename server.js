@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articles =
 {
     
-ArticleOne : 
+ArticleOne: 
 {
     title: "Article-1",
     heading: "Article One",
@@ -60,7 +60,7 @@ ArticleTwo:
                     
 },
 
-ArticleThree :
+ArticleThree:
 {
        title: "Article-3",
     heading: "Article Three",
@@ -167,12 +167,12 @@ app.get('/ui/main.js', function (req, res) {
 
 
 
-//app.get('/:articleName', function (req, res) {
-//var articleName = req.params.articleName;    
+app.get('/:articleName', function (req, res) {
+var articleName = req.params.articleName;    
     
-//res.send(createTemplate (articles [articleName]) );    
+res.send(createTemplate (articles [articleName]) );    
 
-//});
+});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
