@@ -84,7 +84,7 @@ ArticleThree :
                     
 },
 
-}
+};
 
 
 function createTemplate (data) 
