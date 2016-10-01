@@ -1,12 +1,10 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
 var app = express();
 app.use(morgan('combined'));
 
-var articles =
-{
+var articles ={
     
 ArticleOne: 
 {
@@ -31,9 +29,6 @@ ArticleOne:
                         This is the first article content.This is the first article content.This is the first article content.This is the first article content.This is the first article content.This is the first article content.This is the first article content.This is the first article content.This is the first article content.This is the first article content. 
                         
                     </p>`
-                    
-    
-    
 },
 
 ArticleTwo:
@@ -57,8 +52,7 @@ ArticleTwo:
                     <p>
                          This is the Second article content.
                     </p>`
-                    
-},
+                    },
 
 ArticleThree:
 {
@@ -86,7 +80,6 @@ ArticleThree:
 
 };
 
-
 function createTemplate (data) 
 { 
     var title = data.title;
@@ -104,7 +97,6 @@ function createTemplate (data)
           
           <meta name="viewport" content ="width=device-width, initial-scale=1"/>
            <link href="/ui/style.css" rel="stylesheet" />
-        
           
       </head>  
         
