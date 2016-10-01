@@ -4,10 +4,10 @@ var button = document.getElementById ('counter');
 button.onclick = function(){
   
   
-  var request = new XMLhttpRequest();
+  var request = new XMLHttpRequest();
   request.onreadystatechange = function(){
       
-      if (request.readyState === XMLhttprequest.DONE){
+      if (request.readyState === XMLHttprequest.DONE){
           
           if(request.status ===200){
               
@@ -19,13 +19,11 @@ button.onclick = function(){
           }
       }
       
-      request.open ("GET", 'http://thomascn.imad.hasura-app.io/counter', true);
+      request.open ('GET', 'http://thomascn.imad.hasura-app.io/counter', true);
       request.send(null);
       
       
   };
   
 
- 
-    
 };
