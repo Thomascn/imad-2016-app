@@ -1,18 +1,15 @@
-console.log('Loaded!');
- // var element=document.getElementById('main-text') ;
- // element.innerHTML = '';
+//Counter code
+var button = document.getElementById ('counter');
 
-//var img = document.getElementById('madi');
-
-//var marginleft=0;
- 
-//function moveright(){
-   
-//    marginleft=marginleft+1;
- //   img.style.marginLeft = marginleft + 'px';
-  //  }
+var counter = 0;
+button.onclick = function(){
+  
+  
+  
+  
+  counter = counter +1;
+  var span = document.getElementById ('count');
+  span.innerHTML = count.toString();
+  
     
-  // img.onclick = function() {
-       
-   //    var interval = setInterval (moveright, 10);
-  // } ;
+};
