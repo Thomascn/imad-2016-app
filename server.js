@@ -87,7 +87,7 @@ ArticleThree :
 };
 
 
-//function createTemplate (data) 
+function createTemplate (data) 
 { 
     var title = data.title;
     var heading = data.heading;
@@ -139,7 +139,7 @@ ArticleThree :
     `;
     return htmlTemplate;
 }
-//
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
