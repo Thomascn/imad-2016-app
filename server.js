@@ -136,7 +136,7 @@ function createTemplate (data)
         </div> 
     </html>
     
-    `;
+`;
     return htmlTemplate;
 }
 
