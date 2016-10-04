@@ -3,7 +3,7 @@
 alert ('OK'); 
 var button = document.getElementById('counter');
 
-button.onclick = function() {
+button.onclick = function(){
   alert ('clicked');
   var request = new XMLHttpRequest();
   
