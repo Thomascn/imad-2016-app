@@ -1,6 +1,6 @@
 //Counter code
 
-  alert ('OK'); 
+alert ('OK'); 
 var button = document.getElementById('counter');
 
 button.onclick = function(){
