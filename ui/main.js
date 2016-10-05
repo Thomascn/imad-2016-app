@@ -22,11 +22,11 @@ button.onclick = function() {
               
           }
       }
-      
+     alert ("open");
       request.open('GET', 'http://thomascn.imad.hasura-app.io/counter', true);
-      
+     alert ("sending");
       request.send(null);
-      
+        alert ("sent");
   };
   
 
