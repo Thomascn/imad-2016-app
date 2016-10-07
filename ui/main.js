@@ -25,3 +25,7 @@ button.onclick = function() {
       request.send(null);
      
 };
+
+//comment code
+var commentinput = document.getElementById('comment');
+var comment = commentinput.value;
