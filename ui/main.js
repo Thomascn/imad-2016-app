@@ -27,8 +27,7 @@ button.onclick = function() {
 };
 
 //comment code
-var commentinput = document.getElementById('comment');
-var comment = commentinput.value;
+
 var submit = document.getElementById('Submit');
 
 submit.onclick = function(){
@@ -56,6 +55,9 @@ submit.onclick = function(){
       }
       
   };
+  
+  var commentinput = document.getElementById('comment');
+  var comment = commentinput.value;
       request.open('GET', 'http://thomascn.imad.hasura-app.io/comments?comment=' + comment, true);
  
       request.send(null);
