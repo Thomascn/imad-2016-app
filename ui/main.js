@@ -30,9 +30,11 @@ button.onclick = function() {
 var commentinput = document.getElementById('comment');
 var comment = commentinput.value;
 var submit = document.getElementById('Submit');
+
 submit.onclick = function(){
     
     var request = new XMLHttpRequest ();
+    
    request.onreadystatechange = function () {
       
 
