@@ -35,7 +35,7 @@ submit.onclick = function(){
     var comments = ['test comment', 'test comment1'];
     var list = '';
     for (var i=0; i<comments.length; i++) {
-        list = '<li>' + comments[i] + '</li>';
+        list += '<li>' + comments[i] + '</li>';
         
     }
     var ul = document.getElementById('namelist');
