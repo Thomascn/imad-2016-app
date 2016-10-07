@@ -32,7 +32,7 @@ var comment = commentinput.value;
 var submit = document.getElementById('Submit');
 submit.onclick = function(){
     
-    var comments = 'test comment';
+    var comments = 'test comment', 'test comment1';
     var list = '';
     for (var i=0; i<comments.length; i++) {
         list = '<li>' + comments[i] + '</li>';
