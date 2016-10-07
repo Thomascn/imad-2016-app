@@ -137,7 +137,7 @@ app.get('/', function (req, res) {
 
 var comments = [];
 app.get('/comments/:comment', function (req, res) {
-  var comment= req.params.name;
+  var comment= req.params.comment;
   comments.push (comment);
   res.send (JSON.stringify (comments));
   
