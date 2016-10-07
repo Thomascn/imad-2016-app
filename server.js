@@ -135,6 +135,18 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var comments = [];
+app.get('/comments/:comment', function (req, res) {
+  var comment= re.params.name;
+  comments.push (comment);
+  res.send (JSON.stringify (comments));
+  
+    
+});
+
+
+
+
 var counter = 0;
 app.get ('/counter', function (req, res) {
 counter = counter +1;
@@ -158,15 +170,6 @@ var articleName = req.params.articleName;
 res.send(createTemplate (articles [articleName]) );   
 });
 
-var comments = [];
-app.get('/comments/:comment', function (req, res) {
-  var comment= re.params.name;
-  comments.push (comment);
-  res.send (JSON.stringify (comments));
-  
-    
-    
-});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
